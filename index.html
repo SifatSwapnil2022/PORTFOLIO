@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md Sifatullah Sheikh</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Base Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        background: #f5f7fa;
+        color: #333;
+        line-height: 1.6;
+      }
+      a {
+        color: #0066cc;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* Header */
+      .site-header {
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+      .header-inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+      }
+      .main-nav a {
+        margin: 0 0.75rem;
+        font-weight: 500;
+      }
+      .profile-img img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid #0066cc;
+      }
+
+      /* Sections */
+      .section {
+        margin: 3rem 0;
+      }
+      .card {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+      .section h2 {
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        color: #004080;
+      }
+
+      /* Grid */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+
+      /* Project Cards */
+      .project-card {
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s;
+      }
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+      .project-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+      .project-card h3 {
+        margin: 1rem;
+        font-size: 1.4rem;
+        color: #004080;
+      }
+      .project-card p {
+        margin: 0 1rem 1rem;
+      }
+      .project-card a {
+        display: block;
+        margin: 0 1rem 1rem;
+        padding: 0.5rem;
+        background: #0066cc;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+      }
+      .project-card a:hover {
+        background: #005bb5;
+      }
+
+      /* Skills List */
+      .skills-list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+      }
+      .skills-list li {
+        background: #e6f0ff;
+        padding: 0.8rem;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: 500;
+      }
+
+      /* Footer */
+      .site-footer {
+        background: #fff;
+        border-top: 1px solid #ddd;
+        padding: 1rem 0;
+      }
+      .footer-inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .contact-links a {
+        margin-left: 1rem;
+        font-weight: 500;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .header-inner {
+          flex-direction: column;
+          text-align: center;
+        }
+        .main-nav {
+          margin: 1rem 0;
+        }
+        .footer-inner {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1>Md Sifatullah Sheikh</h1>
+        <nav class="main-nav">
+          <a href="#about">About</a>
+          <a href="#interests">Interests</a>
+          <a href="#publications">Events</a>
+          <a href="#transcripts">Transcripts</a>
+          <a href="#cv">CV</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#capstone">Capstone</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="profile-img">
+          <img
+            src="assets/profile.jpeg"
+            alt="Profile of Md Sifatullah Sheikh"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- About -->
+      <section id="about" class="section card">
+        <h2>About Me</h2>
+        <p>
+          Fourth-year Computer Science Engineering student at East West
+          University, specializing in Intelligent Systems & Data Science.
+          Passionate about AI, data-driven solutions, and building impactful
+          tech.
+        </p>
+      </section>
+
+      <!-- Interests -->
+      <section id="interests" class="section card">
+        <h2>Research Interests</h2>
+        <p>
+          Artificial Intelligence, Machine Learning, Natural Language
+          Processing, Data Science, and Intelligent Systems.
+        </p>
+      </section>
+
+      <!-- Events & Publications -->
+      <section id="publications" class="section">
+        <h2>Events & Publications</h2>
+        <div class="card">
+          <p>
+            <strong
+              >AI-Powered Deepfake Detection Using CNN & Vision
+              Transformers</strong
+            ><br />Accepted to <em>2025 6th IBDAP</em>. Supervised by
+            <a
+              href="https://scholar.google.com/citations?user=d7hWJnAAAAAJ"
+              target="_blank"
+              >Al-Imran</a
+            >. Began December 2024.
+          </p>
+          <p>
+            <b>Ongoing work:</b>
+            <li>
+              Enhanced the previous work ["<b
+                >AI-Powered Deepfake Detection Using CNN & Vision
+                Transformers</b
+              >"] on Swin Transformers + EfficientNetV3 hybrid and Explainable
+              AI (XAI) via Grad-CAM for transparent deepfake detection.
+            </li>
+            <li>
+              I have been working on
+              <b>"Adversarial Robustness in Deep Learning"</b> in adversarial
+              research, started in March 2025, aims to improve the robustness of
+              deep learning models against adversarial attacks—small input
+              manipulations that deceive predictions. It explores attack methods
+              like FGSM and PGD, and evaluates defenses such as adversarial
+              training to enhance model security in real-world, safety-critical
+              applications.
+            </li>
+          </p>
+        </div>
+      </section>
+
+      <!-- Transcripts -->
+      <section id="transcripts" class="section card">
+        <h2>Academic Transcripts</h2>
+        <p>
+          <a href="assets/GradeSheet_(10 sem).pdf" download
+            >Download Transcript (10 Sem)</a
+          >
+        </p>
+      </section>
+
+      <!-- CV -->
+      <section id="cv" class="section card">
+        <h2>Curriculum Vitae</h2>
+        <p><a href="assets/cv.pdf" download>Download CV (PDF)</a></p>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="project-card">
+            <img src="projects/sample1.png" alt="EWU Chronicle NET" />
+            <h3>EWU Chronicle NET</h3>
+            <p>
+              Database web app demonstrating user roles & interactive features.
+            </p>
+            <a href="https://apex.oracle.com/..." target="_blank">Live Demo</a>
+          </div>
+          <div class="project-card">
+            <img
+              src="projects/sample2.png"
+              alt="Bangladesh Railway Management System"
+            />
+            <h3>BD Railway Management</h3>
+            <p>
+              Comprehensive RMS: scheduling, timetables, and resource
+              optimization.
+            </p>
+            <a href="https://apex.oracle.com/..." target="_blank">Live Demo</a>
+          </div>
+          <div class="project-card">
+            <img src="projects/sample3.png" alt="FoodieBite" />
+            <h3>FoodieBite</h3>
+            <p>
+              Online food delivery platform enhancing UX & operational
+              efficiency.
+            </p>
+            <a
+              href="https://foodiebite-app-frontend.onrender.com/"
+              target="_blank"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section card">
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+          <li>Python, C++, Java, JavaScript, SQL</li>
+          <li>TensorFlow, PyTorch, scikit-learn, Keras</li>
+          <li>Pandas, NumPy, Matplotlib, Jupyter</li>
+          <li>HTML, CSS, Bootstrap, React</li>
+          <li>Git, GitHub, VS Code, LaTeX</li>
+        </ul>
+      </section>
+
+      <!-- Capstone -->
+      <section id="capstone" class="section card">
+        <h2>Capstone Project</h2>
+        <h3><b>NER for Medicinal Plants</b></h3>
+        <ul>
+          <li>Dataset from BAU, Sylhet, Chittagong, Mymensingh, etc.</li>
+          <li>CNNs (ResNet50, EfficientNet) for species classification</li>
+          <li>Template & NLP-based descriptions (T5-small, DistilGPT-2)</li>
+          <li>Explainability via Grad-CAM</li>
+          <li>Deployed as Streamlit/Flask web app with feedback</li>
+          <li>
+            Supervised by
+            <a
+              href="https://scholar.google.com/citations?view_op=list_works&user=jbyFT7MAAAAJ"
+              target="_blank"
+              >Dr. Md. Nawab Yousuf Ali</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section card">
+        <h2>Contact</h2>
+        <div class="grid">
+          <div>
+            <strong>Email:</strong>
+            <a href="mailto:mdsifatullahsheikh@gmail.com"
+              >mdsifatullahsheikh@gmail.com</a
+            >
+          </div>
+          <div>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/SifatSwapnil2022" target="_blank"
+              >SifatSwapnil2022</a
+            >
+          </div>
+          <div>
+            <strong>LinkedIn:</strong>
+            <a
+              href="https://www.linkedin.com/in/mdsifatullahsheikh/"
+              target="_blank"
+              >mdsifatullahsheikh</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; 2025 Md Sifatullah Sheikh</p>
+      </div>
+    </footer>
+  </body>
+</html>
